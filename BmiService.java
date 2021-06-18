@@ -1,7 +1,7 @@
 public class BmiService {
-    public int calculateIndex(int mass, int height) {
-        int reducedHeight = height * height; //приведенное значение роста (значение в квадрате)
-        int bodyMassIndex = mass / reducedHeight;
-        return bodyMassIndex;
+    public int calculateIndex(double mass, double height) {
+        double reducedHeight = height * height; //приведенное значение роста (значение в квадрате)
+        double bodyMassIndex = mass / reducedHeight;
+        return (int) bodyMassIndex;
     }
 }
